@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ site.name }}</title>
+    <meta name="description" content="{{ site.name }}" />
+    <link href="atom.xml" rel="alternate" title="RSS" type="application/rss+xml" />
+    {% include stylesheets.html %}
+    <!--[if IE]>
+      <script type="text/javascript" src="/js/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      {% include header.textile %}
+    </header>
+    <div id="content" class="container_24">
+      {{ content }}
+    </div>
+  	{% include analytics.textile %}
+	</body>
+</html>

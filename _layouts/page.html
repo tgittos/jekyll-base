@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    {% if page.title %}
+    <title>{{ page.title }} - {{ site.name }}</title>
+    {% else %}
+    <title>{{ site.name }}</title>
+    {% endif %}
+    <meta name="description" content="{{ page.description }}" />
+    <link href="atom.xml" rel="alternate" title="RSS" type="application/rss+xml" />
+    {% include stylesheets.html %}
+    <!--[if IE]>
+      <script type="text/javascript" src="/js/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      {% include header.textile %}
+    </header>
+    <div id="content" class="container_24">
+      {{ content }}
+    </div>
+    {% include analytics.textile %}
+  </body>
+</html>

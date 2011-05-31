@@ -1,0 +1,10 @@
+---
+layout: post
+title: Hello World!
+description: Your Jekyll site is ready to use
+tags: hello world
+---
+
+Your Jekyll site is ready to use.
+
+Please fill in the correct data for your site in the _config.yml file.
