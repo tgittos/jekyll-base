@@ -14,13 +14,13 @@ pygments:    false
 markdown:    maruku
 permalink:   /:categories/:title
 
-url:         http://airbrushstop.com/
-name:        Airbrush Stop
+url:         http://www.example.com/
+name:        Example Site
 admin:       
-  name:      Tim Gittos
-  email:     tim@airbrushstop.com
-analytics:   UA-2190162-9
-disqus:      airbrushstop
+  name:      John Doe
+  email:     jdoe@example.com
+analytics:   UA-1234567-8
+disqus:      example
 
 maruku:
   use_tex:    false
