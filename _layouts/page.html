@@ -14,13 +14,12 @@
       <script type="text/javascript" src="/js/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <header>
-      {% include header.textile %}
-    </header>
-    <div id="content" class="container_24">
+  <body class="container_24">
+    {% include header.html %}
+    {% include navigation.html %}
+    <section id="content" class="grid_24">
       {{ content }}
-    </div>
-    {% include analytics.textile %}
+    </section>
+  	{% include analytics.html %}
   </body>
 </html>

@@ -4,19 +4,12 @@ body { font-family: sans-serif; font-size: 16px; font-weight: lighter; line-heig
 h1 { font-size: 24px; }
 h2 { font-size: 20px; }
 h3 { font-size: 18px; }
-
-/* General document */
-.clear { clear: both; }
-nav ul { display: inline; }
-nav ul li { display: inline; margin-left: 10px; font-weight: bold; }
-
-#header h2 { font-size: 1.2em; letter-spacing: -2px; display: inline;  }
+header h2 { font-size: 2em; }
+nav ul li { display: inline; font-weight: bold; }
 
 #content { 
   padding-top: 30px; /* Vertical whitespace */
-  border-top: solid 1px #fff; 
 }
-
 .post { 
   margin-bottom: 30px; /* Vertical whitespace */
   height: 180px;
@@ -35,3 +28,5 @@ nav ul li { display: inline; margin-left: 10px; font-weight: bold; }
 #post-list ul li { margin-bottom: 15px; }
 #post-list .metadata, #post-list .date { font-size: 0.8em; }
 #post-list .date { margin-bottom: 2px; font-weight: normal; }
+
+.clear { clear: both; }

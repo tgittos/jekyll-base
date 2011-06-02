@@ -14,21 +14,28 @@
       <script type="text/javascript" src="/js/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <header>
-      {% include header.textile %}
-    </header>
-    <div id="content" class="container_24 post">
-      <h1>{{ page.title }}</h1>
-      {{ content }}
-      <h2>Comments</h2>
-      <div id="disqus_thread"></div>
-      <script type="text/javascript" src="http://disqus.com/forums/{{ site.disqus}}/embed.js"></script>
-      <noscript>
-        <a href="http://disqus.com/forums/{{ site.disqus }}/?url=ref">View the discussion thread.</a>
-      </noscript>
-      <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-    </div>
+  <body class="container_24">
+    {% include header.html %}
+    {% include navigation.html %}
+    <section id="content" class="grid_24 post">
+      <article>
+        <header>
+          <h1>{{ page.title }}</h1>
+        </header>
+        <section>
+          {{ content }}
+        </section>
+        <section>
+          <h2>Comments</h2>
+          <div id="disqus_thread"></div>
+          <script type="text/javascript" src="http://disqus.com/forums/{{ site.disqus}}/embed.js"></script>
+          <noscript>
+            <a href="http://disqus.com/forums/{{ site.disqus }}/?url=ref">View the discussion thread.</a>
+          </noscript>
+          <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+      </article>
+    </section>
     <script type="text/javascript">
       //<![CDATA[
       (function() {
@@ -43,6 +50,6 @@
       })();
     //]]>
     </script>
-    {% include analytics.textile %}
+    {% include analytics.html %}
   </body>
 </html>
