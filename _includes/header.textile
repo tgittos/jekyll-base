@@ -1,6 +1,4 @@
-<div id="logo">
-  <h1><a href="/" title="Back to home">{{ site.name }}</a></h1>
-</div>
+<h2><a href="/" title="Back to home">{{ site.name }}</a></h2>
 <nav>
   <ul>
     <li><a href="/hello-world/" title="Hello world">Hello world</a></li>
