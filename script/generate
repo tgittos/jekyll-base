@@ -1,0 +1,26 @@
+#! /usr/bin/env ruby
+
+require 'date'
+
+class Generator
+  def self.post(title, description, tags)
+    filename = "_posts/#{Date.today.strftime('%Y-%m-%d')}-#{title.downcase.gsub(' ', '-')}.textile"
+    content = <<-eos
+---
+layout: post
+title: #{title}
+description: #{description}
+tags: #{tags.split(',').join(' ')}
+---
+    eos
+    `echo '#{content}' > #{filename}`
+    puts "Created #{filename}"
+  end
+end
+
+cmd = ARGV.shift
+if !Generator.respond_to?(cmd)
+  puts "Don't know how to #{cmd}"
+else
+  Generator.send(cmd, *ARGV)
+end
