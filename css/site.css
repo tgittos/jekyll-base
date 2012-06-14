@@ -29,4 +29,7 @@ nav ul li { display: inline; font-weight: bold; }
 #post-list .metadata, #post-list .date { font-size: 0.8em; }
 #post-list .date { margin-bottom: 2px; font-weight: normal; }
 
+ol, ul { list-style: inherit; }
+li { margin-left: 20px; }
+
 .clear { clear: both; }
